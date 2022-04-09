@@ -1,0 +1,31 @@
+{
+  "name": "koa-jsonapi-boilerplate",
+  "version": "1.0.0",
+  "description": "JSONAPI boilerplate based on koa.js",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start:prod": "node dist/app.js",
+    "start:dev": "ts-node src/app.ts",
+    "start:dev:watch": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/app.ts",
+    "test": "jest --config jest.config.js -i",
+    "prettier": "prettier --config .prettierrc --write src/**/*.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "jest": "^27.5.1",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.1.1",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}

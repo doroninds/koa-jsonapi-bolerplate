@@ -1,0 +1,9 @@
+### Entry point
+
+GET http://localhost:3000
+Content-Type: Content-Type: application/vnd.api+json
+
+### Health check
+
+GET http://localhost:3000/.health-check
+Content-Type: Content-Type: application/vnd.api+json
